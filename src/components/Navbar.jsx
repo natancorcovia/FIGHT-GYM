@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav>
       <div className="container">
         <a href="#home" className="text-3xl font-bold">
-          TEAM-BIZU
+          FIGHT-GYM
         </a>
 
         <ul className="hidden md:flex text-xl font-semibold gap-8">
