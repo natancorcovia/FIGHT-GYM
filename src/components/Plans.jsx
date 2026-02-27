@@ -33,8 +33,7 @@ const pricingPlans = [
 
 const Plans = () => {
   return (
-    <section className="text-white py-24 px-6">
-      {/* Header */}
+    <section id="planos" className="text-white py-24 px-6">
       <div className="text-center mb-16">
         <h2 className="text-5xl font-extrabold tracking-wide">Nossos Planos</h2>
         <p className="text-gray-400 mt-4 text-lg">
@@ -42,7 +41,6 @@ const Plans = () => {
         </p>
       </div>
 
-      {/* Cards */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {pricingPlans.map((plan) => (
           <div

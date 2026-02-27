@@ -1,17 +1,18 @@
-import { classesData } from "../../constants/index";
+import { teachersData } from "../../constants/index";
 
-const Classes = () => {
+const Teachers = () => {
   return (
-    <section id="aulas" className="py-22">
+    <section id="professores" className="py-20">
       <div className="text-left space-y-4">
-        <h2 className="text-4xl font-extrabold leading-tight">NOSSAS AULAS</h2>
+        <h2 className="text-4xl font-extrabold leading-tight">PROFESSORES</h2>
         <p className="text-lg">
-          Escolha sua luta favorita e comece seu treinamento!
+          Aprenda com as maiores autoridades do mundo das artes marciais!
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
-        {classesData.map((item) => (
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 justify-items-center">
+        {" "}
+        {teachersData.map((item) => (
           <div
             key={item.title}
             className="relative group overflow-hidden h-[500px]"
@@ -38,4 +39,4 @@ const Classes = () => {
   );
 };
 
-export default Classes;
+export default Teachers;

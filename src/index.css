@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
-
 @import "tailwindcss";
 
 @theme {
@@ -7,16 +6,13 @@
   --color-dark-800: #151515;
   --color-gray-300: #cecece;
   --color-gray-100: #f4f4f4;
-
   --font-primary: "Montserrat", sans-serif;
 }
 
-/* =========================
-   BASE
-========================= */
-
 html,
 body {
+  margin: 0;
+  padding: 0;
   width: 100%;
   background-color: var(--color-dark-900);
   color: var(--color-gray-100);
@@ -24,10 +20,6 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
-/* =========================
-   UTILITIES
-========================= */
 
 @utility flex-center {
   @apply flex justify-center items-center;
@@ -57,57 +49,48 @@ body {
   );
 }
 
-/* =========================
-   COMPONENTS
-========================= */
-
 @layer components {
   main {
-    @apply w-full overflow-x-hidden;
+    @apply w-full overflow-x-hidden pt-20;
   }
 
-  /* ================= NAV ================= */
-
+  /* NAV */
   nav {
     @apply fixed top-0 left-0 z-50 w-full bg-dark-900/80 backdrop-blur-md border-b border-dark-800;
-
-    .container {
-      @apply flex items-center justify-between h-20 px-5 md:px-0 max-w-6xl mx-auto;
-    }
-
-    a {
-      @apply text-gray-300 hover:text-gray-100 transition-colors duration-300;
-    }
   }
 
-  /* ================= HERO ================= */
+  nav .container {
+    @apply flex items-center justify-between h-20 px-5 md:px-0 max-w-6xl mx-auto;
+  }
 
+  nav a {
+    @apply text-gray-300 hover:text-gray-100 transition-colors duration-300;
+  }
+
+  /* HERO */
   #hero {
-    @apply relative min-h-dvh w-full max-w-none mx-0 
-         flex items-center px-16;
-
-    h1 {
-      @apply text-5xl md:text-7xl font-extrabold leading-tight;
-    }
-
-    p {
-      @apply mt-6 text-gray-300 max-w-2xl mx-auto text-lg;
-    }
-
-    .buttons {
-      @apply flex gap-6 mt-10 flex-wrap;
-    }
-
-    .btn-primary {
-      @apply bg-gray-100 text-dark-900 px-8 py-3 font-semibold rounded-md hover:opacity-90 transition;
-    }
-
-    .btn-outline {
-      @apply border border-gray-300 text-gray-300 px-8 py-3 rounded-md hover:bg-gray-300 hover:text-dark-900 transition;
-    }
+    @apply relative min-h-dvh w-full flex items-center;
   }
 
-  /* ================= SECTION ================= */
+  #hero h1 {
+    @apply text-5xl md:text-7xl font-extrabold leading-tight;
+  }
+
+  #hero p {
+    @apply mt-6 text-gray-300 max-w-2xl mx-auto text-lg;
+  }
+
+  .buttons {
+    @apply flex gap-6 mt-10 flex-wrap;
+  }
+
+  .btn-primary {
+    @apply bg-gray-100 text-dark-900 px-8 py-3 font-semibold rounded-md hover:opacity-90 transition;
+  }
+
+  .btn-outline {
+    @apply border border-gray-300 text-gray-300 px-8 py-3 rounded-md hover:bg-gray-300 hover:text-dark-900 transition;
+  }
 
   section {
     @apply m-0 max-w-full;
@@ -121,13 +104,9 @@ body {
     @apply text-gray-300 leading-relaxed;
   }
 
-  /* ================= CARD ================= */
-
   .card {
     @apply bg-dark-800 rounded-xl p-8 border border-dark-800 hover:border-gray-300 transition duration-300;
   }
-
-  /* ================= FOOTER ================= */
 
   footer {
     @apply py-10 text-center text-gray-300 border-t border-dark-800;

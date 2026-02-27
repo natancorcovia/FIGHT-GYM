@@ -38,7 +38,7 @@ const Hero = () => {
 
   return (
     <section
-      id="hero"
+      id="home"
       className="relative w-screen h-screen overflow-hidden left-1/2 -translate-x-1/2 flex items-center"
     >
       <img
