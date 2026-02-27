@@ -63,7 +63,7 @@ const Hero = () => {
           forte com o seu corpo e a se proteger contra qualquer coisa.
         </p>
 
-        <div id="buttons" className="mt-10 flex gap-6 ml-2">
+        <div id="buttons" className="mt-10 flex gap-6">
           <div className="inline-block mr-6">
             <button className="cursor-pointer bg-white text-black px-8 py-3 font-semibold rounded-md hover:opacity-60 transition">
               Matricule-se Agora

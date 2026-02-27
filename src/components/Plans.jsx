@@ -33,7 +33,7 @@ const pricingPlans = [
 
 const Plans = () => {
   return (
-    <section id="planos" className="text-white py-24 px-6">
+    <section id="planos" className="text-white py-24 px-44">
       <div className="text-center mb-16">
         <h2 className="text-5xl font-extrabold tracking-wide">Nossos Planos</h2>
         <p className="text-gray-400 mt-4 text-lg">

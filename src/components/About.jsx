@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id="sobre"
-      className="flex gap-30 w-full flex-col md:flex-row items-start py-50"
+      className="flex gap-30 w-full flex-col md:flex-row items-start py-50 px-44"
     >
       <div id="about-text" className="w-full md:w-1/2">
         <h1 className="font-extrabold text-4xl leading-tight text-left">
