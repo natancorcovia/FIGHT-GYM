@@ -2,7 +2,7 @@ import { classesData } from "../../constants/index";
 
 const Classes = () => {
   return (
-    <section id="aulas" className="py-22 px-44">
+    <section id="aulas" className="pt-22 pb-68 px-44">
       <div className="text-left space-y-4">
         <h2 className="text-4xl font-extrabold leading-tight">NOSSAS AULAS</h2>
         <p className="text-lg">

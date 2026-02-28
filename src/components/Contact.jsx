@@ -2,7 +2,7 @@ import { Phone, MapPin, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contato" className="w-full px-6 md:px-16 py-50">
+    <section id="contato" className="w-full px-6 md:px-16 pt-50">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
         <div className="space-y-8">
           <h2 className="text-4xl font-semibold text-left">Fale Conosco</h2>

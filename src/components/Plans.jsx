@@ -33,10 +33,10 @@ const pricingPlans = [
 
 const Plans = () => {
   return (
-    <section id="planos" className="text-white py-24 px-44">
-      <div className="text-center mb-16">
+    <section id="planos" className="text-white py-4 px-44">
+      <div className="text-center mb-8">
         <h2 className="text-5xl font-extrabold tracking-wide">Nossos Planos</h2>
-        <p className="text-gray-400 mt-4 text-lg">
+        <p className="text-gray-400 mt-2 text-lg">
           Escolha o plano ideal para você
         </p>
       </div>
@@ -70,7 +70,7 @@ const Plans = () => {
               </ul>
             </div>
 
-            <button className="bg-white text-black py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+            <button className="bg-white text-black py-3 rounded-lg font-semibold hover:bg-gray-400 transition cursor-pointer">
               Assinar
             </button>
           </div>

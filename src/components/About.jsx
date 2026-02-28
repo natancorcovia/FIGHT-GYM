@@ -1,3 +1,9 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
 const About = () => {
   return (
     <section
@@ -8,6 +14,7 @@ const About = () => {
         <h1 className="font-extrabold text-4xl leading-tight text-left">
           SOBRE NÓS
         </h1>
+
         <div className="text-lg mt-8 text-justify space-y-6">
           <p>
             A Fight-Gym é uma academia de artes marciais que oferece diversas
@@ -26,12 +33,40 @@ const About = () => {
         </div>
       </div>
 
-      <div className="h-103 w-full md:w-1/2 flex">
-        <img
-          src="/images/about.jpg"
-          alt="Fight-Gym"
-          className="object-cover rounded-lg shadow-lg w-full h-full"
-        />
+      <div className="h-110 w-full md:w-1/2">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={1}
+          loop={false}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 4000 }}
+          className="w-full h-full rounded-lg"
+        >
+          <SwiperSlide>
+            <img
+              src="/images/about1.jpg"
+              alt="Treino 1"
+              className="object-cover w-full h-110 rounded-lg"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <img
+              src="/images/about2.jpg"
+              alt="Treino 2"
+              className="object-cover w-full h-170 rounded-lg"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <img
+              src="/images/about3.jpg"
+              alt="Treino 3"
+              className="object-cover w-full h-120 rounded-lg"
+            />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   );

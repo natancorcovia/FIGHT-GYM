@@ -2,7 +2,7 @@ import { teachersData } from "../../constants/index";
 
 const Teachers = () => {
   return (
-    <section id="professores" className="py-20 px-44">
+    <section id="professores" className="pb-20 pt-68 px-44">
       <div className="text-left space-y-4">
         <h2 className="text-4xl font-extrabold leading-tight">PROFESSORES</h2>
         <p className="text-lg">
