@@ -55,7 +55,7 @@ const Plans = () => {
                 <span className="text-gray-400 text-lg">/mês</span>
               </div>
 
-              <div className="h-[1px] bg-gray-700 mb-8"></div>
+              <div className="h-px bg-gray-700 mb-8"></div>
 
               <ul className="space-y-4 mb-12">
                 {plan.features.map((feature, index) => (

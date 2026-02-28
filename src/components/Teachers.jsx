@@ -15,7 +15,7 @@ const Teachers = () => {
         {teachersData.map((item) => (
           <div
             key={item.title}
-            className="relative group overflow-hidden h-[500px]"
+            className="relative group overflow-hidden h-125"
           >
             <img
               src={item.image}
