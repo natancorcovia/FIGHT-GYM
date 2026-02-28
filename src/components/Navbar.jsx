@@ -1,34 +1,29 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { navLinks } from "../../constants";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
   useGSAP(() => {
-    const navTween = gsap.timeline({
-      scrollTrigger: {
-        trigger: "nav",
-        start: "bottom top",
-      },
+    ScrollTrigger.create({
+      trigger: "#home",
+      start: "bottom top",
+      onEnter: () => document.querySelector("nav").classList.add("scrolled"),
+      onLeaveBack: () =>
+        document.querySelector("nav").classList.remove("scrolled"),
     });
-    navTween.fromTo(
-      "nav",
-      { backgroundColor: "transparent" },
-      {
-        backgroundColor: "#00000050",
-        backgroundFilter: "blur(10px)",
-        duration: 1,
-        ease: "power1.inOut",
-      },
-    );
   });
+
   return (
     <nav>
-      <div className="container">
-        <a href="#home" className="text-3xl font-bold">
+      <div className="container px-5">
+        <a href="#home" className="text-2xl md:text-3xl font-bold">
           FIGHT-GYM
         </a>
 
-        <ul className="hidden md:flex text-xl font-semibold gap-8">
+        <ul className="hidden md:flex text-lg font-semibold gap-8">
           {navLinks.map((link) => (
             <li key={link.id}>
               <a href={`#${link.id}`}>{link.title}</a>
