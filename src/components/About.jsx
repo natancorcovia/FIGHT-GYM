@@ -45,8 +45,9 @@ const About = () => {
             {[1, 2, 3].map((item) => (
               <SwiperSlide key={item}>
                 <img
-                  src={`/images/about${item}.jpg`}
+                  src={`/images/about${item}.webp`}
                   alt={`Treino ${item}`}
+                  loading="lazy"
                   className={`w-full h-full object-cover rounded-xl ${
                     item === 3 ? "object-[center_40%]" : "object-center"
                   }`}

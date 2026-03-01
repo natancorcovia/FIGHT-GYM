@@ -40,8 +40,9 @@ const Hero = () => {
       className="relative w-full min-h-screen flex items-center overflow-hidden"
     >
       <img
-        src="/images/hero.jpg"
+        src="/images/hero.webp"
         alt="Hero Background"
+        loading="lazy"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black/60" />\{" "}

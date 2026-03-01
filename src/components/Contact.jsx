@@ -33,8 +33,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Form */}
-        <form className="space-y-6 w-full max-w-md">
+        <form className="space-y-6 w-full max-w-md mt-12">
           <input
             type="text"
             placeholder="Seu Nome"

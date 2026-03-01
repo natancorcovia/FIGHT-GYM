@@ -14,31 +14,26 @@ const Classes = () => {
           </p>
         </div>
 
-        {/* GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {classesData.map((item) => (
             <div
               key={item.title}
               className="relative group overflow-hidden rounded-xl h-[380px] cursor-pointer"
             >
-              {/* IMAGE */}
               <img
                 src={item.image}
                 alt={item.title}
+                loading="lazy"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105 transition duration-500"
               />
 
-              {/* OVERLAY */}
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition duration-500" />
-
-              {/* TITLE */}
+              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/20 transition duration-300"></div>
               <div className="absolute top-6 left-6 text-white">
                 <h3 className="text-xl md:text-2xl font-bold tracking-wide">
                   {item.title}
                 </h3>
               </div>
 
-              {/* DESCRIPTION */}
               <div className="absolute bottom-6 left-6 right-6 text-white opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                 <p className="text-sm leading-relaxed">{item.description}</p>
               </div>

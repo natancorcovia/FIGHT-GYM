@@ -28,19 +28,19 @@ const navLinks = [
 const teachersData = [
   {
     title: "ELISEU ROMÃO",
-    image: "/images/boxeteacher.jpg",
+    image: "/images/boxeteacher.webp",
     description:
       "11x campeão desde 1988, referência em técnica, disciplina e mentalidade vencedora no boxe.",
   },
   {
     title: "CAIO MONTEIRO",
-    image: "/images/mmateacher.jpg",
+    image: "/images/mmateacher.webp",
     description:
       "Veterano do MUAY THAI e MMA com experiência em diversas modalidades, conhecido por sua versatilidade e habilidade estratégica dentro do octógono.",
   },
   {
     title: "RICARDO ALMEIDA",
-    image: "/images/bjjteacher.jpg",
+    image: "/images/bjjteacher.webp",
     description:
       "Faixa-preta com trajetória consolidada em competições, autoridade no Jiu-Jitsu e formador de atletas de alto nível.",
   },
@@ -49,25 +49,25 @@ const teachersData = [
 const classesData = [
   {
     title: "MUAY THAI",
-    image: "/images/muaythaicard.jpg",
+    image: "/images/muaythaicard.webp",
     description:
       "Arte marcial de combate que usa punhos, cotovelos, joelhos e canelas com potência e precisão.",
   },
   {
     title: "BOXE",
-    image: "/images/boxecard.jpg",
+    image: "/images/boxecard.webp",
     description:
       "Esporte de combate focado em golpes rápidos e estratégicos com os punhos.",
   },
   {
     title: "MMA",
-    image: "/images/mmacard.jpg",
+    image: "/images/mmacard.webp",
     description:
       "Modalidade que combina diferentes artes marciais em lutas completas, em pé e no chão.",
   },
   {
     title: "JIU-JITSU",
-    image: "/images/bjjcard.jpg",
+    image: "/images/bjjcard.webp",
     description:
       "Arte suave baseada em alavancas, técnica e finalizações no combate corpo a corpo.",
   },
