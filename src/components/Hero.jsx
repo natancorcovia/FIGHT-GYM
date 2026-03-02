@@ -58,11 +58,12 @@ const Hero = () => {
 
           <p
             id="subtitle"
-            className="mt-6 text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-left md:text-justify"
+            className="mt-6 text-sm sm:text-base md:text-md text-gray-300 leading-relaxed lg:max-w-4xl"
           >
             O objetivo do nosso programa de artes marciais é ajudar você a
-            desenvolver habilidades. Este é o lugar onde você aprende a se
-            tornar forte com o seu corpo e a se proteger contra qualquer coisa.
+            desenvolver habilidades. <br /> Este é o lugar onde você aprende a
+            se tornar forte com o seu corpo e a se proteger contra qualquer
+            coisa.
           </p>
 
           <div id="buttons" className="mt-8 flex flex-col sm:flex-row gap-4">

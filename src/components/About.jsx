@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -9,11 +8,11 @@ const About = () => {
     <section id="sobre" className="w-full py-30 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-8">
+          <h2 className="about-title text-3xl md:text-4xl font-extrabold mb-8">
             SOBRE NÓS
           </h2>
 
-          <div className="text-base md:text-md text-gray-300 leading-relaxed space-y-6">
+          <div className="about-text text-base md:text-md text-gray-300 leading-relaxed space-y-6">
             <p>
               A Fight-Gym é uma academia de artes marciais que oferece diversas
               opções de aulas e estilos que podem ser praticados por todas as
@@ -32,7 +31,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2">
+        <div className="about-swiper w-full md:w-1/2">
           <Swiper
             modules={[Pagination, Autoplay]}
             spaceBetween={20}
@@ -40,7 +39,7 @@ const About = () => {
             loop={false}
             pagination={{ clickable: true }}
             autoplay={{ delay: 4000 }}
-            className="w-full h-[100px] md:h-[360px] rounded-xl"
+            className="w-full h-[300px] md:h-[360px] rounded-xl"
           >
             {[1, 2, 3].map((item) => (
               <SwiperSlide key={item}>

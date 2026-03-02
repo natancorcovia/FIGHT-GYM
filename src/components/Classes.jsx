@@ -2,19 +2,18 @@ import { classesData } from "../../constants";
 
 const Classes = () => {
   return (
-    <section id="aulas" className="py-20 px-6 md:px-12 lg:px-20">
+    <section className="py-20 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
-        {/* HEADER */}
+        {" "}
         <div className="text-left mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
             NOSSAS AULAS
           </h2>
-          <p className="text-gray-300 text-base md:text-lg">
+          <p id="aulas" className="text-gray-300 text-base md:text-lg">
             Escolha sua luta favorita e comece seu treinamento!
           </p>
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {classesData.map((item) => (
             <div
               key={item.title}

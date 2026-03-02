@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="container px-5">
+      <div className="container px-5 flex items-center justify-center md:justify-between">
         <a href="#home" className="text-2xl md:text-3xl font-bold">
           FIGHT-GYM
         </a>

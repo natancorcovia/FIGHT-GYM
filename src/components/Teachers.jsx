@@ -2,17 +2,17 @@ import { teachersData } from "../../constants/index";
 
 const Teachers = () => {
   return (
-    <section id="professores" className="pt-24 pb-24 px-6 md:px-12 lg:px-20">
+    <section className="pt-24 pb-24 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto text-left space-y-4">
         <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
           PROFESSORES
         </h2>
-        <p className="text-md text-gray-300 max-w-2xl">
+        <p id="professores" className="text-md text-gray-300 max-w-2xl">
           Aprenda com as maiores autoridades do mundo das artes marciais!
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-16">
         {teachersData.map((item) => (
           <div
             key={item.title}
